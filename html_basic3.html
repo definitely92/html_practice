@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section {margin-top: 10px;}
+article {border: 1px solid #000;}
+table {border-spacing:0; border-top: 1px solid #000; border-left: 1px solid #000;}
+table th,
+table td {text-align: center; padding:3px 0; border-right: 1px solid #000; border-bottom: 1px solid #000; border-spacing: 0;}
+</style>
+<body>
+    <section>
+        <h1>1. HTML 제목은 &#60;h1&#62; ~ &#60;h6&#62; 태그로 정의됩니다.</h1>
+        &#60;h1&#62;은 가장 중요한 제목을 &#60;h6&#62;은 가장 중요하지 않은 제목을 정의합니다,
+        <article>
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+        </article>
+    </section>
+    <section>
+        <h1>2. 단락은 &#60;P&#62;태그로 정의 됩니다</h1>
+        <article>
+            <h4>THis is heading 4</h4>
+            <h5>This is heading 5</h5>
+        </article>
+    </section>
+    <section>
+        <h1>3. 링크는 &#60;a&#62;태그로 정의 됩니다</h1>
+        <article>
+            <h4><a href="https://www.naver.com"><u>This is link</u></a></h4>
+        </article>
+    </section>
+    <section>
+        <h1>4. 이미지는 &#60;img&#62;태그로 정의 됩니다. 소스파일(src), 대체 텍스트(alt), 너비 및 높이가 속성으로 제공.</h1>
+        <article>
+            <img src="./coco.JPG" alt="울집 강아지" width="100" height="auto"/>
+        </article>
+    </section>
+    <section>
+        <h1>장바구니 목록</h1>
+        <ul>
+            <li>사과</li>
+            <li>바나나</li>
+            <li>딸기</li>
+        </ul>
+        <table>
+            <thead>
+                <th>과일</th>
+                <th>수량</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>사과</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>바나나</th>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>딸기</th>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <form action="">
+            <label for="name">
+                이름 : 
+            </label>
+            <input type="text" name="name" id="name" style="width:150px;" required> 
+            <br>
+            <br>
+                <label for="email">
+                    이메일 : <input type="text" name="email" id="email" style="width:150px;" required>
+                </label>    
+            <br>
+            <br>
+                <label for="password">
+                    비밀번호 : <input type="password" name="password" id="password" style="width:150px;" required>
+                </label>    
+            <br>
+            <p><input type="submit" value="가입하기"></p>
+        </form>
+    </section>
+</body>
+</html>
